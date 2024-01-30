@@ -1,9 +1,9 @@
-package domain
+package host
 
 import "testing"
 
 func TestMatch(t *testing.T) {
-	if !Domain("github.com").Match(Domain("github.com")) {
+	if !Host("github.com").Match(Host("github.com")) {
 		t.Error("same domain must match")
 	}
 }
